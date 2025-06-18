@@ -1,0 +1,26 @@
+package com.graphql.learn.services;
+
+import java.awt.print.Book;
+import java.util.List;
+
+public class BookServiceImpl implements BookService {
+
+	@Override
+	public Book create(Book book) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Book> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Book get(int bookId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

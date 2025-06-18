@@ -1,0 +1,5 @@
+package com.grpahql.learn.repositries;
+
+public interface BookRepo {
+
+}

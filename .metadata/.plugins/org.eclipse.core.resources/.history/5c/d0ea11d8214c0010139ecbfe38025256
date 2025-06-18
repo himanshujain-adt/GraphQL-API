@@ -1,0 +1,41 @@
+package com.graphql.learn.services.impl;
+
+import java.awt.print.Book;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.graphql.learn.services.BookService;
+import com.grpahql.learn.repositries.BookRepo;
+
+@Service
+public class BookServiceImpl  implements  BookService{
+	
+	private BookRepo bookRepo;
+	
+	@Autowired
+	public BookServiceImpl(BookRepo bookRepo) {
+		this.bookRepo=bookRepo;
+		
+	}
+
+	
+	public Book create(Book book) {
+		// TODO Auto-generated method stub
+		return this.bookRepo.save(book);
+	}
+
+
+	public List<Book> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Book get(int bookId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
